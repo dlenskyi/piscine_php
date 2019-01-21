@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+thead
+{
+    font-size: 25px;
+}
+td
+{
+    margin: 0;
+    text-align:right;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 1px;
+}
+.row
+{
+    margin-left: 5px;
+    width: auto;
+    float:left;
+    display: inline-block;
+    border: 3px solid black;
+}
+input
+{
+    width: 120px;
+    /*//height: 30px;*/
+    font-size: 20px;
+}
+.r1
+{
+    background-color: #62fb9b;
+}
+.r2
+{
+    background-color: gold;
+}
+.r3
+{
+    background-color: crimson;
+}

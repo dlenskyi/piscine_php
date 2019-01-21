@@ -1,0 +1,84 @@
+body {
+    background-color: whitesmoke;
+}
+h1 {
+    color: green;
+    text-align: center;
+    width: 100vw;
+    height: 4.5vh;
+    font-size: 2.5vw;
+}
+.purple {
+    background-color: plum;
+}
+.aquamarine {
+    background-color: aquamarine;
+}
+.yellow {
+    background-color: palegoldenrod;
+}
+.lightgrn {
+    background-color: lightgreen;
+}
+.lightorange {
+    background-color: lemonchiffon;
+}
+.orange {
+    background-color: lightsalmon;
+}
+.blue {
+    background-color: dodgerblue;
+}
+.lightred {
+    background-color: coral;
+}
+.darkred {
+    background-color: salmon;
+}
+.darkpink {
+    background-color: mediumvioletred;
+}
+.white {
+    color: rgba(255, 255, 255, 0.2);
+}
+table {
+    width: 100%;
+    min-height: 600px;
+    max-height: 1000px;
+    min-width: 1000px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+td, table, tr {
+    position: relative;
+}
+td {
+    width: 11vw;
+    height: 6vh;
+    max-width: 2000px;
+}
+.weight {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 0.8vw;
+}
+.element {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1.5vw;
+}
+.number {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    font-size: 0.8vw;
+}
+.image {
+    position: absolute;
+    left: 30%;
+    top: 145px;
+    width: auto;
+    max-height: 13vh;
+}

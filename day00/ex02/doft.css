@@ -1,0 +1,166 @@
+body {
+    background-color: #505050;
+}
+.wrapper {
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.dot42 {
+    position: absolute;
+    top: 10px;
+    right: 980px;
+    width: 430px;
+    height: 110px;
+}
+.doft42 {
+    position: relative;
+    top: 6px;
+    left: 12.7%;
+    box-shadow: 10px 10px 10px #0E0E0E;
+    border-radius: 10px;
+    background-color:#909090;
+    width: 1420px;
+    height: 140px;
+}
+.loupe {
+    position: absolute;
+    grid-column: 3 / 6;
+    grid-row: 1 / 1;
+    top: 9%;
+    left: 1130px;
+}
+.reload {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.close {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.clusterbg {
+    position: absolute;
+    grid-column: 3 / 6;
+    grid-row: 1 / 1;
+    background-color:#909090;
+    box-shadow: 10px 10px 10px #0E0E0E;
+    border-radius: 10px;
+    width: 1020px;
+    height: 580px;
+    top: 168px;
+    left: 420px;
+}
+.cluster {
+    position: absolute;
+    width: 1000px;
+    height: 560px;
+    top: 10px;
+    left: 10px;
+}
+.sidebarl {
+    position: absolute;
+    background-color:#909090;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #0E0E0E;
+    width: 140px;
+    height: 425px;
+    top: 165px;
+    left: 250px;
+}
+.sidebarr {
+    position: absolute;
+    background-color:#909090;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #0E0E0E;
+    width: 140px;
+    height: 425px;
+    top: 165px;
+    left: 1470px;
+}
+.book {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    width: 70px;
+    height: 95px;
+}
+.chat-icon {
+    position: absolute;
+    top: 330px;
+    left: 32px;
+    width: 70px;
+    height: 68px;
+}
+.brick {
+    position: absolute;
+    top: 180px;
+    background-image: url("resources/brick.jpg");
+    left: 10px;
+    width: 120px;
+    height: 70px;
+}
+.arrow {
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    width: 70px;
+    height: 70px;
+}
+.sidebarl img:hover {
+    border: 5px solid red;
+}
+.oeil {
+    position: absolute;
+    top: 170px;
+    left: 27px;
+    width: 70px;
+    height: 65px;
+}
+.outil {
+    position: absolute;
+    top: 250px;
+    left: 32px;
+    width: 70px;
+    height: 70px;
+}
+.towel {
+    position: absolute;
+    top: 123px;
+    left: 35px;
+    width: 70px;
+    height: 50px;
+}
+.main {
+    position: absolute;
+    top: 95px;
+    left: 32px;
+    width: 70px;
+    height: 70px;
+}
+.doft {
+    position: absolute;
+    top: 1000px;
+}
+.win {
+    position: absolute;
+    top: 672px;
+    left: 180px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #0E0E0E;
+    background-color: lightgreen;
+    width: 520px;
+    height: 170px;
+    font-family: monospace;
+}
+.form {
+    position: absolute;
+    top: 85px;
+    left: 12px;
+}

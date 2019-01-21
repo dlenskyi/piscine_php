@@ -1,0 +1,47 @@
+body {
+	background-color: #F08080;
+}
+.form {
+	position: relative;
+	left: 35%;
+	top: 30%;
+	border: 1px solid black;
+	border-width: 4px;
+	padding: 10px;
+	width: 500px;
+}
+input[type="text"] {
+	width: 500px;
+	height: 25px;
+	font-size: 15px;
+}
+input[type="password"] {
+	width: 500px;
+	height: 25px;
+	font-size: 15px;
+}
+.modif {
+	margin-left: 40%;
+}
+.create {
+	margin-left: 7%;
+}
+.back {
+	margin-left: 37%;
+}
+h1 {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+a:hover {
+	color: yellow;
+}
+input[type="submit"] {
+	text-align: center;
+	margin-left: 45%;
+	width: 50px;
+}

@@ -1,0 +1,24 @@
+<?php
+
+if ($_POST['submit'] && $_POST['submit'] == "OK" && $_POST['login'] && $_POST['passwd']) {
+    if (!file_exists('../private/passwd')) {
+        mkdir("../private");
+    }
+    $user = unserialize(file_get_contents('../private/passwd'));
+    foreach($user as $key => $val) {
+        if ($val['login'] == $_POST['login']) {
+            exit("ERROR\n");
+        }
+    }
+    $user[] = array("login" => $_POST['login'],
+                    "passwd" => hash('whirlpool', $_POST['passwd']));
+    file_put_contents('../private/passwd', serialize($user));
+    header('Location: index.html');
+    echo "OK\n";
+}
+else {
+    header('Location: create.html');
+    echo "ERROR\n";
+}
+
+?>

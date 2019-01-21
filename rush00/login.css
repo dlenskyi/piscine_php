@@ -1,0 +1,151 @@
+body {
+    background-color: #ab9696;
+    margin: 0;
+    padding: 0;
+}
+.general {
+    width: 100%;
+    background-color: darkorange;
+}
+.basket {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 15%;
+    top: 1.8%;
+    z-index: 3;
+}
+h1 {
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+.in_basket {
+    right: 30px;
+    text-shadow: 0px 0px 4px white;
+    position: relative;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.topmenu > li {
+    float: right;
+    margin-right: 1%;
+    position: relative;
+}
+ul.topmenu > li > a {
+    display: block;
+    padding: 25px;
+    color: black;
+    background-color: darkorange;
+    text-decoration: none;
+}
+ul.topmenu > li > a:hover {
+    text-decoration: underline;
+    background-color: wheat;
+}
+ul.dropmenu {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 100%;
+    right: 0px;
+    background-color: white;
+}
+ul.dropmenu > li {
+    display: block;
+}
+ul.dropmenu > li > a {
+    display: block;
+    padding: 0px;
+    width: 100%;
+    color: black;
+    background-color: violet;
+    text-decoration: none;
+}
+ul.dropmenu > li > a:hover {
+    text-decoration: underline;
+    background-color: wheat;
+}
+ul.topmenu > li:hover > ul.dropmenu  {
+    display: block;
+}
+ul.subdrop {
+    position: absolute;
+    display: none;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    margin-left: -100%;
+    background-color: white;
+}
+
+ul.subdrop > li {
+    display: block;
+}
+
+ul.subdrop > li > a {
+    display:block;
+    padding: 0px;
+    color: black;
+    background-color: goldenrod;
+    text-decoration: none;
+}
+ul.subdrop > li > a:hover {
+    text-decoration: underline;
+    background-color: wheat;
+}
+ul.dropmenu > li:hover > ul.subdrop {
+    display: block;
+}
+.change {
+    margin-left: -15px;
+}
+.main {
+    background: url(img/bg_img2.jpg)repeat center center fixed;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    margin-left:15%;
+    margin-top: 5%;
+    width: 70%;
+    min-height: 182vh;
+}
+.at{
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 280px;
+    min-height: 280px;
+    display: block;
+}
+.descr {
+    padding: 0px;
+    font-style: italic;
+    margin-left: 30%;
+    font-size: 20px;
+}
+img {
+    float: left;
+}
+.container {
+    float: right;
+    width: 100%;
+}
+input[type="submit"] {
+    margin-left: 30%;
+    display: inline-block;
+}
+input[type="number"] {
+    margin-left: 30%;
+    width:40;
+}
