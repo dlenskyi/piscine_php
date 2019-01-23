@@ -1,0 +1,24 @@
+<- Vector ----------------------------------------------------------------------
+Vector class represents a 3D Vector:
+This time we will use homogeneous system too, but the component w will always be
+worth 0.0 and will considered as an arbitrary vector component
+in the calculations, like x, y or z.
+All attributes are private, so no __get or __set methods.
+Instance constuctor: from two points of Vertex: orig and dest. Example:
+new Vector( array( 'dest' => *Vertex_instance*, 'orig' => *Vertex_instance* );
+'dest': the Vector’s destination Vertex, mandatory.
+'orig': the Vector’s origin Vertex, optional, by default is worth
+a new instance of the x=0, y=0, z=0, w=1 Vertex.
+The following public methods are providing for this Class:
+- magnitude() : returns the Vector’s length.
+- normalize() : returns a normalized version of the Vector. If the Vector is
+already normalized, returns a fresh copy of the Vector;
+- add( Vector $rhs ) : returns the sum vector of both vectors;
+- sub( Vector $rhs ) : returns the difference vector of both vectors;
+- opposite() : returns the opposite Vector;
+- scalarProduct( $k ) : returns the multiplication of the vector with a scalar;
+- dotProduct( Vector $rhs ) : returns the scalar multiplication of both vectors;
+- cos( Vector $rhs ) : return the cos between the current instance and $rhs;
+Vector crossProduct( Vector $rhs ) : returns the cross product
+(right handed mark) of the current instance and $rhs.
+---------------------------------------------------------------------- Vector ->
