@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Balloon</title>
+	<style>
+		#balloon {
+			margin: 0 auto;
+			margin-top: 20%;
+			background-color: red;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			display: block;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+		var size = 200;
+		var nb_of_color = 0;
+		var colors = new Array("red", "green", "blue");
+
+		function ft_click() {
+			if (size > 410) {
+				size = 200;
+			} else {
+				size += 10;
+			}
+			if (nb_of_color < 2) {
+				nb_of_color++;
+			} else {
+				nb_of_color = 0;
+			}
+			$('#balloon').css('backgroundColor', colors[nb_of_color]);
+			$('#balloon').css('width', size);
+			$('#balloon').css('height', size);
+		}
+
+		function ft_out() {
+			if (size > 200) {
+				size -= 5;
+				if (nb_of_color > 0) {
+					nb_of_color--;
+				} else {
+					nb_of_color = 2;
+				}
+				$('#balloon').css('backgroundColor', colors[nb_of_color]);
+				$('#balloon').css('width', size);
+				$('#balloon').css('height', size);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="balloon" onclick="ft_click()" onmouseout="ft_out()"></div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calc</title>
+	<style>
+		button[name="submit"] {
+			margin-left: 100px;
+		}
+	</style>
+	<script>
+		function do_op(x) {
+			var nb1 = x.elements["nbLeft"].value;
+			var nb2 = x.elements["nbRight"].value;
+			var op = x.elements["op"].value;
+			if (!is_valid(nb1) || !is_valid(nb2)) {
+				alert('Error :(');
+			} else {
+				nb1 = Number(nb1);
+				nb2 = Number(nb2);
+				if (nb1 < 0 || nb2 < 0) {
+					alert('Error :(');
+				} else {
+					if (op == '+') {
+						console.log(nb1 + nb2);
+						alert(nb1 + nb2);
+					}
+					else if (op == '-') {
+						console.log(nb1 - nb2);
+						alert(nb1 - nb2);
+					}
+					else if (op == '*') {
+						console.log(nb1 * nb2);
+						alert(nb1 * nb2);
+					}
+					else if (op == '/') {
+						if (!nb2) {
+							console.log("It's over 9000!");
+							alert("It's over 9000!");
+						} else {
+							console.log(nb1 / nb2);
+							alert(nb1 / nb2);
+						}
+					}
+					else if (op == '%') {
+						if (!nb2) {
+							console.log("It's over 9000!");
+							alert("It's over 9000!");
+						} else {
+							console.log(nb1 % nb2);
+							alert(nb1 % nb2);
+						}
+					}
+				}
+			}
+		}
+
+		function is_valid(nb) {
+			if (parseInt(Number(nb)) == nb && !isNaN(nb) && !isNaN(parseInt(nb, 10))) {
+				return (1);
+			}
+			return (0);
+		}
+
+		function ft_wait() {
+			setTimeout(ft_alert, 30000);
+		}
+		
+		function ft_alert() {
+			alert('Please, use me...');
+			setTimeout(ft_alert, 30000);
+		}
+	</script>
+</head>
+<body onload="ft_wait()">
+	<div>
+		<form onsubmit="do_op(this)" id="myForm" action ="">
+			<input id="nbLeft" type="text" name="left" placeholder="First number" />
+			<select type="text" name="op" >
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input id="nbRight" type ="text" name="right" placeholder="Second number" />
+			<br />
+			<button name="submit" value="OK">Try me!</button>
+		</form>
+	</div>
+</body>
+</html>
